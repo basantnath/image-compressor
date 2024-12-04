@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.hero-section-bg-gradient {
+    background-image: url('../assets/images/hero-section-bg.svg');
+}
+
+.image-compressor-section-gradient {
+    background-image: radial-gradient(ellipse farthest-side, rgba(0, 111, 255, 0.15), transparent);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: absolute;
+    top: -15%;
+    bottom: -20%;
+    left: 0;
+    right: 0;
+}
+
+.hero-section-gradient {
+    background-image: radial-gradient(ellipse farthest-side, rgba(0, 111, 255, 0.15), transparent);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: absolute;
+    top: -15%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+/* Apply hero section styles to the testimonials section
+ #testimonials {
+    background-image: radial-gradient(ellipse farthest-side, rgba(0, 111, 255, 0.15), transparent);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative; /* Adjusted to ensure proper stacking 
+}  */
+
+/* Apply hero section styles to the FAQ section */
+/* #faq {
+    background-image: radial-gradient(ellipse farthest-side, rgba(0, 111, 255, 0.15), transparent);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative; /* Adjusted to ensure proper stacking */

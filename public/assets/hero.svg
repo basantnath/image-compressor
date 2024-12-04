@@ -1,0 +1,41 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    @keyframes compress {
+      0% { transform: scale(1); }
+      50% { transform: scale(0.8); }
+      100% { transform: scale(1); }
+    }
+    @keyframes float {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0px); }
+    }
+    .hover-group:hover .compress {
+      animation: compress 1s ease-in-out infinite;
+    }
+    .float {
+      animation: float 3s ease-in-out infinite;
+    }
+  </style>
+  
+  <g class="hover-group float">
+    <!-- Original Image Frame -->
+    <rect x="50" y="50" width="140" height="140" fill="#e0e0e0" rx="10"/>
+    <text x="120" y="130" text-anchor="middle" fill="#666">5 MB</text>
+    
+    <!-- Arrow -->
+    <path d="M200 120 L280 120 M270 110 L280 120 L270 130" 
+          fill="none" stroke="#666" stroke-width="3"/>
+    
+    <!-- Compressed Image Frame -->
+    <rect x="290" y="65" width="110" height="110" 
+          class="compress" fill="#4CAF50" rx="8"/>
+    <text x="345" y="130" text-anchor="middle" fill="white">1 MB</text>
+    
+    <!-- File Icon Details in Frames -->
+    <rect x="70" y="80" width="100" height="10" fill="#bbb"/>
+    <rect x="70" y="100" width="100" height="10" fill="#bbb"/>
+    <rect x="305" y="90" width="80" height="8" fill="#fff"/>
+    <rect x="305" y="106" width="80" height="8" fill="#fff"/>
+  </g>
+</svg>

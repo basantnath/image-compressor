@@ -38,11 +38,4 @@ app.get("/home", (req, res) => {
   res.sendFile(path.join(__dirname, "public", "home.html"));
 });
 
-// Catch-all route for 404 Not Found
-app.use("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "public", "404.html"));
-});
-
-app.listen(PORT, () => {
-  console.log(`Server is running at http://localhost:${PORT}`);
-});
+app.listen(PORT)
